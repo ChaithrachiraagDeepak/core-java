@@ -1,0 +1,3 @@
+enum WalnutArea{
+	KASHMIR,HIMACHAL,PUNJAB,UTTARAKHAND;
+}
