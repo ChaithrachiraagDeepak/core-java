@@ -1,3 +1,0 @@
-enum HorlicksArea{
-	CHENNAI,HYDERABAD,PUNE,DELHI;
-}

@@ -1,4 +1,0 @@
-enum BeerArea{
-	GOA,BANGALORE,PUNE,MUMBAI;
-}
-

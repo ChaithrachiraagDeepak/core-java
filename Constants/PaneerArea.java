@@ -1,3 +1,0 @@
-enum PaneerArea{
-	DELHI,AMRITSAR,LUDHIANA,JAIPUR;
-}

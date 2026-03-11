@@ -1,3 +1,0 @@
-enum CashewArea{
-	GOA,KERALA,MANGALORE,KOLLAM;
-}
