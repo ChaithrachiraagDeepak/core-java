@@ -1,0 +1,3 @@
+enum District{
+	BELAGAVI,PALNADU,KOLHAPUR,KASARGODU;
+}
