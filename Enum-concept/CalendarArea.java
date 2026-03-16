@@ -1,0 +1,3 @@
+enum CalendarArea{
+	BANGALORE,MYSORE,MANGALORE,UDUPI;
+}
