@@ -15,7 +15,7 @@ class SingerRunner{
 		singerNames.music("chitra");
 		System.out.println("<---------->");
 		
-		singerNames.music("anuaradha bath");
+		singerNames.music("anuaradha batt");
 		System.out.println("<---------->");
 		
 		singerNames.music("rajesh krishnan");
@@ -55,11 +55,31 @@ class SingerRunner{
 		System.out.println("<---------->");
 		
 		singerNames.music("sadhu kokila");
-		
-		
-		
+	
 		singerNames.music("hemanth");
 		singerNames.music("shreya goshal");
+		
+		
+		boolean found=singerNames.search("punithrajkumar");
+		System.out.println("singerNames name found:"+found);
+		System.out.println("-----------------------------------------------");
+		
+		
+		boolean take = singerNames.update(3,"baby");
+		System.out.println("we updated new name:"+take);
+		System.out.println("-----------------------------------------------");
+		
+		boolean get = singerNames.update("anuaradha batt", "sleeping");
+		System.out.println("we updated name using string:"+get);
+		System.out.println("-----------------------------------------------");
+		
+		boolean store = singerNames.delete(8);
+		System.out.println("deleing the mentioned index:"+store);
+		System.out.println("-----------------------------------------------");
+		
+		boolean storing = singerNames.delete("lakshmi");
+		System.out.println("deleting index using stirng");
+		System.out.println("-----------------------------------------------");
 
 		
 	}

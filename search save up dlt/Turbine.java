@@ -1,16 +1,16 @@
-class Steel {
+class Turbine {
 	
 	String[] types;
 	int currenctIndex = 0;
 
-	Steel(String[] types)
+	Turbine(String[] types)
 	{
 		this.types = types;
 	}
 
 	void save(String type)
 	{
-		System.out.println("executing createin Steel:");
+		System.out.println("executing createin Turbine:");
 		System.out.println("type:" + type);
 
 		if(this.types != null)
@@ -36,7 +36,7 @@ class Steel {
 
 	boolean search(String type)
 	{
-		System.out.println("executing search in Steel");
+		System.out.println("executing search in Turbine");
 
 		if(type != null)
 		{
@@ -44,13 +44,13 @@ class Steel {
 
 			if(this.types != null)
 			{
-				for(String iron : this.types)
+				for(String turbo : this.types)
 				{
-					System.out.println("comparing with types:" + iron);
+					System.out.println("comparing with types:" + turbo);
 
-					if(iron == type)
+					if(turbo == type)
 					{
-						System.out.println("steelname:" + type);
+						System.out.println("turbinename:" + type);
 						return true;
 					}
 				}
@@ -63,51 +63,68 @@ class Steel {
 		return false;
 	}
 	
-	boolean update(int index,String name)
+	//0<9: 20
+	boolean update(int index, String name)
 	{
-		System.out.println("index"+index);
+		System.out.println("index:"+index);
 		System.out.println("name:"+name);
+		
 		if(name!=null)
 		{
-			System.out.println("name is not null");
-			if(types!=null){
+			System.out.println("name is not null u can update");
+			
+			if(types!=null)
+			{
 				System.out.println("array is existed");
-				if(index>=0 && index<=this.types.length-1){
-					this.types[index] == name;
-					return true;
-						
-					}
-				}
-			}
-			return false;
-		}
-		
-		
-		boolean update(String oldName, String newName)
-		{
-			System.out.println("oldName:"+oldName);
-			System.out.println("newName:"+newName);
-			
-			if(oldName!=null){
-				System.out.println("update oldName");
-				if(newName!=null){
-					System.out.println("update newname");
-					for(int i=0; i<=this.types.length-1;i++){
-						if(this.types[i]==oldName)
-						{
-							this.types[i]= newName;
-							return true;
-						}
-					}
 				
+				if(index>=0 && index<=this.types.length-1)
+				{
+					this.types[index]=name;
+					System.out.println("name is updated");
+					return true;
 				}
+				else{
+					System.out.println("Invalid index");
+				}
+				
+			}else
+			{
+				System.out.println("not found array");
 			}
-			return false;
 			
+		}else{
+			System.out.println("name is null");
 		}
 		
+		return false;
+	}
 		
-		boolean delet (int dltvalue)
+		
+		boolean  updates(String oldName, String newName)
+		{
+			if(oldName!=null)
+			{
+				System.out.println("name is not null u can update");
+					if(newName!=null)
+					{
+						System.out.println("nmae is not null u can update new name");
+						for(int i=0;i<=this.types.length-1;i++){
+							
+							if(this.types[i]==oldName){
+								
+								this.types[i]=newName;
+								
+								return true;
+							}
+							
+						}
+	
+					}
+			}
+			return false;
+		}
+	
+	boolean delet (int dltvalue)
 	{
 		System.out.println("dltvalue:"+dltvalue);
 		if(dltvalue!=0){
@@ -128,15 +145,13 @@ class Steel {
 		System.out.println("value:"+value);
 		if(value!=null){
 			System.out.println("deleting currenctIndex");
-			for(int i=0; i<this.types.length-1;i++){
+			for(int i=0; i<=this.types.length-1;i++){
 				if(this.types[i]== value){
-					this.types[i]= null;
+					this.types[i]=null;
 					return true;
 				}
-					
-				}
 			}
-			return false;
 		}
+		return false;
 	}
-	
+}

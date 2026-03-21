@@ -7,7 +7,7 @@ class TwoWheeler {
 		this.types=types;
 	}
 	
-	void dashboard(String type)
+	void save(String type)
 	{
 		System.out.println("executing createin  TwoWheeler:");
 		System.out.println("type:"+type);
