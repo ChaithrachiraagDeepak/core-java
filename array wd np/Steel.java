@@ -107,7 +107,7 @@ class Steel {
 		}
 		
 		
-		boolean delet (int dltvalue)
+		boolean delete (int dltvalue)
 	{
 		System.out.println("dltvalue:"+dltvalue);
 		if(dltvalue!=0){
@@ -123,7 +123,7 @@ class Steel {
 		return false ;
 	}
 	
-	boolean delet (String value)
+	boolean delete (String value)
 	{
 		System.out.println("value:"+value);
 		if(value!=null){

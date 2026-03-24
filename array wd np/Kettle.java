@@ -109,7 +109,7 @@ class Kettle {
 		}
 	
 	
-	boolean delet (int dltvalue)
+	boolean delete (int dltvalue)
 	{
 		System.out.println("dltvalue:"+dltvalue);
 		if(dltvalue!=0){
@@ -125,7 +125,7 @@ class Kettle {
 		return false ;
 	}
 	
-	boolean delet (String value)
+	boolean delete(String value)
 	{
 		System.out.println("value:"+value);
 		if(value!=null){

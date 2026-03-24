@@ -40,12 +40,12 @@ class SteelRunner
 		System.out.println("-----------------------------------------------");)
 		
 		
-		boolean iot  = steel.delet(7);
+		boolean iot  = steel.delete(7);
 		System.out.println("deleting the 7th index"+iot);
 		System.out.println("-----------------------------------------------");
 		
 		
-		boolean pop = steel.delet ("Cast steel");
+		boolean pop = steel.delete("Cast steel");
 		System.out.println("deleting the indexname using string"+pop);
 		System.out.println("-----------------------------------------------");)
 		

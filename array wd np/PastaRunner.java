@@ -37,12 +37,12 @@ class PastaRunner{
 		System.out.println("-----------------------------------------------");
 		
 		
-		boolean dltname = storepasta.delet (9);
+		boolean dltname = storepasta.delete (9);
 		System.out.println("deleting the 9th index"+dltname);
 		System.out.println("-----------------------------------------------");
 		
 		
-		boolean dltStrng = storepasta.delet ("green sauce pasta");
+		boolean dltStrng = storepasta.delete ("green sauce pasta");
 		System.out.println("deleting the indexname using string"+dltStrng);
 		System.out.println("-----------------------------------------------");
 		

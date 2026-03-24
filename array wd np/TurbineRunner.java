@@ -31,11 +31,11 @@ class TurbineRunner
 		System.out.println("the new name is updated :"+abc);
 		System.out.println("-----------------------------------------------");
 		
-		boolean xyz = turbine.delet(3);
+		boolean xyz = turbine.delete(3);
 		System.out.println("name is dleted:"+xyz);
 		System.out.println("-----------------------------------------------");
 		
-		boolean qwe = turbine.delet("Impulse turbine");
+		boolean qwe = turbine.delete("Impulse turbine");
 		System.out.println("removing vaue");
 		System.out.println("-----------------------------------------------");
 		

@@ -34,12 +34,12 @@ class KettleRunner
 		System.out.println("-----------------------------------------------");
 		
 		
-		boolean dltname = kettle.delet (9);
+		boolean dltname = kettle.delete (9);
 		System.out.println("deleting the 9th index"+dltname);
 		System.out.println("-----------------------------------------------");
 		
 		
-		boolean dltStrng = kettle.delet ("Electric kettle");
+		boolean dltStrng = kettle.delete ("Electric kettle");
 		System.out.println("deleting the indexname using string"+dltStrng);
 		System.out.println("-----------------------------------------------");
 		
