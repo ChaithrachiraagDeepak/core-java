@@ -1,0 +1,9 @@
+enum ProductTypes{
+	
+	GROCERYS,JEWLLERY,INDUSTRY,ELECTRIC;
+}
+
+ enum warrantyYears{
+	
+	FIVE_YEARS,TEN_YEARS,TWELVE_YEARS,TWO_YEARS;
+}
