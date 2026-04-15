@@ -11,7 +11,6 @@ public class ShopRunner {
         boquetShop.clothes();
         boquetShop.get();
 
-
     }
 
 }
