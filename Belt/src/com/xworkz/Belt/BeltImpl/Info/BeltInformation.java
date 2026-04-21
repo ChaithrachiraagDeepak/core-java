@@ -8,6 +8,10 @@ public class BeltInformation {
         this.quality = quality;
     }
 
+
+
+
+
     @Override
     public String toString() {
         return  " quality :"+ this.quality;

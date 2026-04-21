@@ -26,7 +26,11 @@ public class MedicalShopRunner {
         System.out.println("---------------------------------");
 
 
+        MedicalShop medicalShop1= new MedicalShop("medihouse", new String[]{"chest&cold", "fever"}, 70, BrandName.HERBRESS,medicine);
+        MedicalShop medicalShop2= new MedicalShop("medihouse", new String[]{"chest&cold", "fever"}, 70, BrandName.HERBRESS,medicine);
 
+        boolean sameMedi= medicalShop1.equals(medicalShop2);
+        System.out.println("medicalshop:"+ sameMedi);
 
 
     }

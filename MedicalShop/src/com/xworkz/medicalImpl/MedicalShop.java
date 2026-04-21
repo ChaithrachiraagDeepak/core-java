@@ -19,6 +19,20 @@ public class MedicalShop {
         this.medicine = medicine;
     }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof MedicalShop)
+        {
+            MedicalShop medicalShop= (MedicalShop) obj;
+            if(this.tablets == medicalShop.tablets);
+            {
+                return true;
+            }
+        }
+        return super.equals(obj);
+    }
+
     public void tabletDispenser()
     {
         System.out.println("tabletDispenser will dispense tablet on time...");

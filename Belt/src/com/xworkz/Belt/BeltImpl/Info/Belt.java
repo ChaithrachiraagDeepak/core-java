@@ -18,6 +18,19 @@ public class Belt {
         this.beltInformation = beltInformation;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Belt)
+        {
+            Belt belt= (Belt)obj;
+            if(this.types == belt.types)
+            {
+                    return true;
+            }
+        }
+        return super.equals(obj);
+    }
+
     public void wear()
     {
         System.out.println("executing wear in belt...");

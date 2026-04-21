@@ -23,6 +23,16 @@ public class BeltRunner {
         System.out.println("--------------------------------------------");
 
 
+        Belt belt1= new Belt("monster", new String[]{"black", "red"}, 899, Types.LATHER, beltInformation);
+        Belt belt2= new Belt("monster", new String[]{"black", "red"}, 899, Types.LATHER, beltInformation);
 
+        boolean sameBelt= belt1.equals(belt2);
+        System.out.println("belt:"+ sameBelt);
+
+
+
+
+
+        
     }
 }
