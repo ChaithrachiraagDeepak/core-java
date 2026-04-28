@@ -32,6 +32,11 @@ public class MedicalShopRunner {
         boolean sameMedi= medicalShop1.equals(medicalShop2);
         System.out.println("medicalshop:"+ sameMedi);
 
+        MedicalShop medicalShop3= new MedicalShop("medipulss", new String[]{"chest&cold", "callfall"}, 70, BrandName.HERBRESS,medicine);
+        MedicalShop medicalShop4= new MedicalShop("medihouse", new String[]{"chest&cold", "nicip"}, 70, BrandName.HERBRESS,medicine);
+
+        boolean check= medicalShop3.equals(medicalShop4);
+        System.out.println("checking medicalshop..:"+check);
 
     }
 }
